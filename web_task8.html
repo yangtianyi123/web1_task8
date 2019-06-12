@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>web_task8</title>
+	<style type="text/css">
+	*
+	{
+		margin:0;
+		padding: 0;
+	}
+	ul,ol,li
+	{
+		list-style: none;
+	}
+	.top
+	{
+		height: 190px;
+		border-bottom: 4px solid rgb(58,167,71);
+	}
+	.top_top
+	{
+		height: 36px;
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.tt1
+	{
+		width: 620px;
+		height: 36px;
+		float: left;
+	}
+	.tt1 div
+	{
+		width: 135px;
+		height: 13px;
+		float: right;
+		font-size: 13px;
+		color: rgb(93,90,92);
+		text-align: center;
+		line-height: 36px;
+	}
+	.tt2
+	{
+		width: 80px;
+		height: 36px;
+		float: left;
+		text-align: center;
+		line-height: 36px;
+	}
+	.tt2 a
+	{
+		text-decoration: none;
+		font-size: 15px;
+		color: rgb(93,90,92);
+	}
+	.tt3
+	{
+		width: 80px;
+		height: 36px;
+		float: left;
+		text-align: center;
+		line-height: 36px;
+	}
+	.tt3 a
+	{
+		text-decoration: none;
+		font-size: 15px;
+		color: rgb(93,90,92);
+	}
+	.tt4
+	{
+		width: 100px;
+		height: 36px;
+		float: left;
+		text-align: center;
+		line-height: 36px;
+	}
+	.tt4 form select
+	{
+		border:none;
+		font-size: 15px;
+		color: rgb(93,90,92);
+	}
+	.tt5
+	{
+		width: 80px;
+		height: 36px;
+		float: left;
+		text-align: center;
+		line-height: 36px;
+	}
+	.tt5 form select
+	{
+		border:none;
+		font-size: 15px;
+		color: rgb(93,90,92);
+	}
+	.tt6
+	{
+		width: 40px;
+		height: 36px;
+		float: left;
+		text-align: center;
+		line-height: 36px;
+	}
+	.tt7
+	{
+		width: 40px;
+		height: 36px;
+		float: left;
+		text-align: center;
+		line-height: 36px;
+	}
+	.tt8
+	{
+		width: 80px;
+		height: 36px;
+		text-align: center;
+		line-height: 36px;
+		float: left;
+	}
+	.tt8 a
+	{
+		text-decoration: none;
+		font-size: 15px;
+		color: rgb(93,90,92);
+	}
+	.top_mid
+	{
+		width: 1200px;
+		height: 110px;
+		margin: 0 auto;
+	}
+	.tm1
+	{
+		width: 250px;
+		height: 110px;
+		float: left;
+		line-height: 150px;
+	}
+	.tm1 img
+	{
+		margin: 0 auto;
+	}
+	.tm2
+	{
+		width: 594px;
+		height: 49px;
+		float: left;
+		margin: 30px 70px 0 70px;
+	}
+	.tm2 input
+	{
+		width: 540px;
+		height: 47px;
+		text-align: center;
+		line-height: 47px;
+		color: rgb(221,221,221);
+		float: left;
+		border:1px solid rgb(55,55,65);
+
+	}
+	.tm2 span
+	{
+		width: 47px;
+		height: 47px;
+		text-align: center;
+		line-height: 71px;
+		display: inline-block;
+		float: left;
+		border:1px solid rgb(55,55,65);
+	}
+	.tm3
+	{
+		width: 100px;
+		height: 110px;
+		text-align: center;
+		line-height: 110px;
+		float: left;
+	}
+	.top_bot
+	{
+		width: 1200px;
+		height: 40px;
+		margin: 0 auto;
+	}
+	.tb1 select
+	{
+		width: 120px;
+		height: 40px;
+		border:none;
+		float: left;
+		font-size: 15px;
+	}
+	.tb2 ul
+	{
+		float: left;
+	}
+	.tb2 ul li
+	{
+		display: inline-block;
+		width: 100px;
+		height: 41px;
+		text-align: center;
+		line-height: 40px;
+		font-size: 15px;
+	}
+	.tb2 a
+	{
+		text-decoration: none;
+		color: black;
+	}
+	.tb2 ul li:hover
+	{
+		border-bottom: 3px solid rgb(58,167,71)
+	}
+	.tb2 ul li:hover a
+	{
+		color: rgb(58,167,71);
+	}
+	.mid_top img
+	{
+		width: 100%;
+		height: 675px;
+	}
+	.mid_bot
+	{
+		width: 1200px;
+		height: 1000px;
+		margin: 0 auto;
+	}
+	.mb1
+	{
+		height: 60px;
+		width: 1200px;
+	}
+	.mb1_left
+	{
+		width: 160px;
+		height: 60px;
+		text-align: center;
+		line-height: 60px;
+		float: left;
+	}
+	.mb1_left>a
+	{
+		color: black;
+		text-decoration: none;
+		font-size: 18px;
+	}
+	.mb1_left>span
+	{
+		color: rgb(146,145,145);
+		font-size: 13px;
+	}
+	.mb1_left>span>a
+	{
+		text-decoration: none;
+		color: rgb(146,145,145);
+	}
+	.mb1_right
+	{
+		float: right;
+		width: 110px;
+		height: 60px;
+		color: rgb(146,145,145);
+		font-size: 13px;
+		text-align: center;
+		line-height: 60px;
+	}
+	.mb2
+	{
+		height: 200px;
+		width: 1200px;
+	}
+	.mb2 td
+	{
+		border:1px solid rgb(204,204,204);
+		height: 45px;
+		width: 1200px;
+	}
+	.mb2 li
+	{
+		height: 45px;
+		width: 100px;
+		display: inline-block;
+		text-align: center;
+		line-height: 45px;
+
+	}
+	.mb2 a
+	{
+		text-decoration: none;
+		font-size:15px;
+		color:rgb(115,115,115);
+	}
+	.mb3
+	{
+		width: 1200px;
+		height: 770px;
+	}
+	.mb3 li
+	{
+		width: 273px;
+		height: 293px;
+		border:1px solid rgb(135,135,135);
+		display: inline-block;
+		float: left;
+		margin: 20px 12px;
+		position: relative;
+	}
+	.bot
+	{
+		width: 273px;
+		height: 50px;
+		background-color: rgba(76,76,76,0.8);
+		font-size: 15px;
+		color: white;
+		line-height: 22px;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+	}
+	.hide
+	{
+		display: none;
+		width: 273px;
+		height: 293px;
+		position: absolute;
+		bottom: 0;
+		background-color: rgba(60,60,60,0.8);
+		text-align: center;
+		line-height: 22px;
+		color: white;
+		font-size: 20px;
+	}
+	.mb3 li:hover .hide
+	{
+		display: block;
+	}
+	.mb3 li:hover .bot
+	{
+		display: none;
+	}
+	.down
+	{
+		height: 200px;
+		border:1px solid black;
+	}
+	.down_top
+	{
+		height: 100px;
+		background-color: rgb(245,245,245);
+	}
+	.dt
+	{
+		width: 1200px;
+		height: 100px;
+		margin:0 auto;
+	}
+	.dt div
+	{
+		width: 300px;
+		height: 50px;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		border-left: 1px solid rgb(224,224,224);
+	}
+	.dt li
+	{
+		width: 290px;
+		height: 100px;
+		position: relative;
+		display: inline-block;
+	}
+	.down_bot
+	{
+		height: 100px;
+		background-color: rgb(50,50,50);
+	}
+	.ddbb
+	{
+		width: 1200px;
+		height: 100px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.ddbb a
+	{
+		text-decoration: none;
+		color: white;
+	}
+	.ddbb p
+	{
+		color: white;
+	}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="top_top">
+			<div class="tt1"><div>嘿，欢迎来到买猜商城</div></div>
+			<div class="tt2"><a href="#">请登录</a></div>
+			<div class="tt3"><a href="#">免费注册</a></div>
+			<div class="tt4">
+				<form>
+					<select name="dingdan">
+						<option value="1" selected>我的订单</option>
+					</select>
+				</form>
+			</div>
+			<div class="tt5">
+				<form>
+					<select name="maicai">
+						<option value="2" selected>我的买猜</option>
+					</select>
+				</form>
+			</div>
+			<div class="tt8"><a href="#">帮助中心</a></div>
+			<div class="tt6"><a href="#"><img src="imgs_task8/wb.png"></a></div>
+			<div class="tt7"><a href="#"><img src="imgs_task8/wx.png"></a></div>
+		</div>
+		<div class="top_mid">
+			<div class="tm1"><img src="imgs_task8/logo.png"></div>
+			<div class="tm2">
+				<input type="text" name="搜索" value="请输入搜索内容">
+				<span><a href="#"><img src="imgs_task8/search.png"></a></span>
+			</div>
+			<div class="tm3">
+				<img src="imgs_task8/cart.png">
+			</div>
+		</div>
+		<div class="top_bot">
+			<div class="tb1">
+				<form>
+					<select name="fenlei">
+						<option value="1" selected>全部商品分类</option>
+					</select>
+				</form>
+			</div>
+			<div class="tb2">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">名酒</a></li>
+					<li><a href="#">茗茶</a></li>
+					<li><a href="#">玉石</a></li>
+					<li><a href="#">休闲食品</a></li>
+					<li><a href="#">洗护用品</a></li>
+					<li><a href="#">土特产</a></li>
+					<li><a href="#">积分商城</a></li>
+					<li><a href="#">抽奖游戏</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="mid">
+		<div class="mid_top">
+			<img src="imgs_task8/banner.png"/>
+		</div>
+		<div class="mid_bot">
+			<div class="mb1">
+				<div class="mb1_left">
+					<a href="#">首页 </a><span> > <a href="#"> 玉石 </a></span>
+				</div>
+				<div class="mb1_right">共200件相关商品</div>
+			</div>
+			<div class="mb2">
+				<table  cellspacing="0">
+					<tr>
+						<td>
+							<ul>
+								<li style="background:rgb(229,229,229);color:black">玉石</li>
+								<li><a href="#">白玉</a></li>
+								<li><a href="#">碧玉</a></li>
+								<li><a href="#">黄玉</a></li>
+								<li><a href="#">和田玉</a></li>
+								<li><a href="#" style="font-size:15px;color:rgb(58,167,71);">翡翠</a></li>
+								<li><a href="#">绿松玉</a></li>
+								<li><a href="#">墨玉</a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li style="background:rgb(229,229,229);color:black">其他</li>
+								<li><a href="#" style="font-size:15px;color:rgb(58,167,71);">吊坠</a></li>
+								<li><a href="#">扳指</a></li>
+								<li><a href="#">手镯</a></li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li style="background:rgb(229,229,229);color:black">地区</li>
+								<li><a href="#">北京</a></li>
+								<li><a href="#">安徽</a></li>
+								<li><a href="#">福建</a></li>
+								<li><a href="#">内蒙古</a></li>
+								<li><a href="#">宁夏</a></li>
+								<li><a href="#">黑龙江</a></li>
+								<li><a href="#">河北</a></li>
+								<li style="float:right;"><a href="#">更多</a></li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="mb3">
+				<ul>
+					<li>
+						<img src="imgs_task8/img1.png">
+						<div class="bot">
+							<p>竞猜价：¥399.00</p>
+							<p>翡翠千手观音挂坠</p>
+						</div>
+						<div class="hide">
+							<br/><br/><br/><br/><br/>
+							<p>竞猜价：¥399.00</p>
+							<br/>
+							<p>翡翠千手观音挂坠</p>
+						</div>
+					</li>
+					<li>
+						<img style="margin:50px 40px;" src="imgs_task8/img2.png">
+						<div class="bot">
+							<p>竞猜价：¥399.00</p>
+							<p>翡翠千手观音挂坠</p>
+						</div>
+						<div class="hide">
+							<br/><br/><br/><br/><br/>
+							<p>竞猜价：¥399.00</p>
+							<br/>
+							<p>翡翠千手观音挂坠</p>
+						</div>
+					</li>
+					<li>
+						<img style="margin:50px 40px;" src="imgs_task8/img3.png">
+						<div class="bot">
+							<p>竞猜价：¥399.00</p>
+							<p>翡翠千手观音挂坠</p>
+						</div>
+						<div class="hide">
+							<br/><br/><br/><br/><br/>
+							<p>竞猜价：¥399.00</p>
+							<br/>
+							<p>翡翠千手观音挂坠</p>
+						</div>
+					</li>
+					<li>
+						<img style="margin:50px 40px;" src="imgs_task8/img4.png">
+						<div class="bot">
+							<p>竞猜价：¥399.00</p>
+							<p>翡翠千手观音挂坠</p>
+						</div>
+						<div class="hide">
+							<br/><br/><br/><br/><br/>
+							<p>竞猜价：¥399.00</p>
+							<br/>
+							<p>翡翠千手观音挂坠</p>
+						</div>
+					</li>
+					<li>
+						<img style="margin:50px 40px;" src="imgs_task8/img5.png">
+						<div class="bot">
+							<p>竞猜价：¥399.00</p>
+							<p>翡翠千手观音挂坠</p>
+						</div>
+						<div class="hide">
+							<br/><br/><br/><br/><br/>
+							<p>竞猜价：¥399.00</p>
+							<br/>
+							<p>翡翠千手观音挂坠</p>
+						</div>
+					</li>
+					<li>
+						<img style="margin:50px 40px;" src="imgs_task8/img6.png">
+						<div class="bot">
+							<p>竞猜价：¥399.00</p>
+							<p>翡翠千手观音挂坠</p>
+						</div>
+						<div class="hide">
+							<br/><br/><br/><br/><br/>
+							<p>竞猜价：¥399.00</p>
+							<br/>
+							<p>翡翠千手观音挂坠</p>
+						</div>
+					</li>
+					<li>
+						<img style="margin:50px 40px;" src="imgs_task8/img7.png">
+						<div class="bot">
+							<p>竞猜价：¥399.00</p>
+							<p>翡翠千手观音挂坠</p>
+						</div>
+						<div class="hide">
+							<br/><br/><br/><br/><br/>
+							<p>竞猜价：¥399.00</p>
+							<br/>
+							<p>翡翠千手观音挂坠</p>
+						</div>
+					</li>
+					<li>
+						<img style="margin:50px 40px;" src="imgs_task8/img8.png">
+						<div class="bot">
+							<p>竞猜价：¥399.00</p>
+							<p>翡翠千手观音挂坠</p>
+						</div>
+						<div class="hide">
+							<br/><br/><br/><br/><br/>
+							<p>竞猜价：¥399.00</p>
+							<br/>
+							<p>翡翠千手观音挂坠</p>
+						</div>s
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="down">
+		<div class="down_top">
+		<div class="dt">
+			<ul style="display:inline-block;">
+				<li>
+					<div>
+						<img style="float:left;margin:0 20px 0 20px;" src="imgs_task8/f1.png">
+						<p>资质认证</p>
+						<p>服务商100%实名认证</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img style="float:left;margin:0 20px 0 20px;" src="imgs_task8/f2.png">
+						<p>支付安全</p>
+						<p>明码标价支付及信息安全</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img style="float:left;margin:0 20px 0 20px;" src="imgs_task8/f3.png">
+						<p>保险赔付</p>
+						<p>为您提供担保赔付</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img style="float:left;margin:0 20px 0 20px;" src="imgs_task8/f4.png">
+						<p>售后无忧</p>
+						<p>服务出问题经理全程跟进</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<div class="down_bot">
+			<div class="ddbb">
+				<p>
+					<br/>
+					<a href="#">首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">工商代理</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">财务代记账</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">股权交易与变更</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">企业贷款</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">办公室租赁</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">社保公积金代理</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">法律服务</a>
+				</p>
+				<p>
+					<br/>
+					© 2017-2018 买猜商城有限公司 版权所有
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
